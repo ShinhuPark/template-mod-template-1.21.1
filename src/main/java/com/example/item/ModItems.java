@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item DX_KUMA = registerItem("dx_kuma", new Item(new Item.Settings()));
+    public static final Item DX_KUMA = registerItem("dx_kuma", new Item(new Item.Settings().food(ModFoodComponents.DX_KUMA)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TemplateMod.MOD_ID, name), item);
